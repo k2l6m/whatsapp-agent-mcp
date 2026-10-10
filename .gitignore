@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
+*.pyc
 *$py.class
 
 # C extensions
@@ -25,6 +26,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# WhatsApp session and local data
+bridge/store/
 
 # PyInstaller
 #   Usually these files are written by a python script from a template
