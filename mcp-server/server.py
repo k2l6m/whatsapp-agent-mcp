@@ -44,6 +44,14 @@ def send_file(
     return response.json()
 
 
+@server.tool()
+def health_check() -> dict:
+    return {
+        "status": "ok",
+        "bridge": "connected"
+    }
+
+
 if __name__ == "__main__":
 	print("Starting WhatsApp MCP Server...")
 	print("Waiting for MCP client connection...")
